@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Character Counter</title>
+</head>
+<body>
+  <h3>Live Character Counter :</h3>
+  
+  <textarea id="textBox" rows="6" cols="40"></textarea>
+  <p>Characters: <span id="count">0</span></p>
+
+  <script>
+   
+    let textBox = document.getElementById("textBox");
+    let count = document.getElementById("count");
+
+    
+    textBox.oninput = function() {
+      count.innerText = textBox.value.length;
+    };
+  </script>
+</body>
+</html>
